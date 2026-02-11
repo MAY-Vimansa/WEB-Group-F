@@ -1,0 +1,211 @@
+/* --- Updated CSS --- */
+
+/* Define color variables for the blue and white theme */
+:root {
+    --primary-blue: #0056b3;
+    --secondary-blue: #f0f8ff;
+    --text-color: #333;
+    --light-text: #666;
+    /* Colors for error messages */
+    --error-color: #d9534f;
+    --error-bg: #f2dede;
+    /* New: Colors for success messages */
+    --success-color: #28a745;
+    --success-bg: #d4edda;
+}
+
+/* Basic page reset and font style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-blue);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container class to center content with a maximum width */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.site-header {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    margin-right: 0.5rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: var(--primary-blue);
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+/* Reusing login-container. */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* New: Slightly wider container for the registration form */
+.registration-container {
+    max-width: 700px;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.square{
+    border:3px solid #0056b3;
+    border-radius:10px;
+}
+
+.welcome-title {
+    margin-bottom: 1rem;
+    color: var(--primary-blue);
+}
+
+
+
+/* New: Unified Message Area Styles */
+.message-area {
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    display: none; /* Hidden by default */
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+/* Specific style for errors */
+.message-error {
+    background-color: var(--error-bg);
+    color: var(--error-color);
+    border: 1px solid #ebccd1;
+    display: block;
+}
+
+/* Specific style for success */
+.message-success {
+    background-color: var(--success-bg);
+    color: var(--success-color);
+    border: 1px solid #c3e6cb;
+    display: block;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* Updated: Applies styles to both input and select fields */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit; /* Ensures select font matches inputs */
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+/* New: Makes the "Select your role" placeholder text lighter */
+.form-group select:invalid {
+    color: var(--light-text);
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-blue);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #004494;
+}
+
+/* Login Footer Styles */
+.login-footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+.login-footer a {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: var(--primary-blue);
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-box {
+        padding: 1.5rem;
+    }
+}

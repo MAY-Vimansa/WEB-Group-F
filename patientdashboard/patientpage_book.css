@@ -1,0 +1,205 @@
+/* Color Theme */
+:root {
+    --primary-blue: #004a99;
+    --secondary-blue: #007bff;
+    --bg-light: #f0f4f8;
+    --white: #ffffff;
+    --text-dark: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-blue);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-solid {
+    background: white;
+    border: none;
+    color: var(--primary-blue);
+}
+
+/* Dashboard Content */
+.welcome-header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.welcome-header h1 {
+    color: var(--primary-blue);
+    font-size: 2.5rem;
+}
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.category-group h3 {
+    margin-bottom: 15px;
+    border-left: 5px solid var(--secondary-blue);
+    padding-left: 10px;
+}
+
+.card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doc-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    font-size: 40px;
+    background: var(--bg-light);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.btn-select {
+    background-color: var(--secondary-blue);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Booking Page Specifics */
+.booking-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.slot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.slot {
+    padding: 10px;
+    border: 1px solid var(--secondary-blue);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slot:hover {
+    background: var(--secondary-blue);
+    color: white;
+}
+
+.slot.selected {
+    background: var(--primary-blue);
+    color: white;
+}
+
+.btn-confirm {
+    width: 100%;
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Alerts */
+.alert-success { padding: 15px; background: #d4edda; color: #155724; border-radius: 5px; margin-bottom: 15px; }
+.alert-error { padding: 15px; background: #f8d7da; color: #721c24; border-radius: 5px; margin-bottom: 15px; }
+.alert-hidden { display: none; }
+
+/* Footer */
+.footer {
+    background-color: var(--primary-blue);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}

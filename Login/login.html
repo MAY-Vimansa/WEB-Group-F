@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medi-Connect - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">🔵</span> Medi-Connect
+            </div>
+            <nav class="main-nav">
+                <a href="/Homepage/home.html">Home</a>
+                <a href="#">About</a>
+            </nav>
+        </div>
+    </header>
+
+   <main class="main-content">
+        <div class="login-container">
+            <div class="square">
+                <div class="login-box">
+                    <h2 class="welcome-title">LOGIN</h2>
+                    
+                    
+                    <div id="error-message" class="error-message">
+                        Hidden error message
+                    </div>
+                    
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="login-button">Login</button>
+                    </form>
+                    
+                    <div class="login-footer">
+                        <p>Don't have an account? <a href="/patientRegister/register.html" target="_self">Register here</a></p>
+                        <p class="demo-info">Demo: doctor@test.com or patient@test.com (Pass: 123)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2024 University Computer Science Dept. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

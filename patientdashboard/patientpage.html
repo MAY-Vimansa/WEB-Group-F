@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard - UniHealth</title>
+    <link rel="stylesheet" href="patientpage_book.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🔵 UniHealth CMS</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="auth-btns">
+            <button class="btn btn-outline">Logout</button>
+            <!--<button class="btn btn-solid">Register</button>-->
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="welcome-header">
+            <h1>Welcome, [Patient!]</h1>
+            <p>Choose your specialist from the categories below</p>
+        </header>
+
+        <section class="selection-section">
+            <h2 class="section-title">Select a Doctor</h2>
+            
+            <div class="doctor-grid">
+                <div class="category-group">
+                    <h3>General Physician</h3>
+                    <div class="card">
+                        <div class="doc-info">
+                            <div class="avatar">👨‍⚕️</div>
+                            <div>
+                                <h4>Dr. Anya Sharma</h4>
+                                <p>Available: 4PM - 9PM</p>
+                            </div>
+                        </div>
+                        <button class="btn-select" onclick="location.href='booking.html'">Select Doctor</button>
+                    </div>
+                    <div class="card">
+                        <div class="doc-info">
+                            <div class="avatar">👨‍⚕️</div>
+                            <div>
+                                <h4>Dr. David Chen</h4>
+                                <p>Available: 4PM - 9PM</p>
+                            </div>
+                        </div>
+                        <button class="btn-select" onclick="location.href='booking.html'">Select Doctor</button>
+                    </div>
+                </div>
+
+                <div class="category-group">
+                    <h3>Dermatologist</h3>
+                    <div class="card">
+                        <div class="doc-info">
+                            <div class="avatar">👩‍⚕️</div>
+                            <div>
+                                <h4>Dr. Emily White</h4>
+                                <p>Available: 4PM - 9PM</p>
+                            </div>
+                        </div>
+                        <button class="btn-select" onclick="location.href='booking.html'">Select Doctor</button>
+                    </div>
+                    <div class="card">
+                        <div class="doc-info">
+                            <div class="avatar">👩‍⚕️</div>
+                            <div>
+                                <h4>Dr. Grace Lee</h4>
+                                <p>Available: 4PM - 9PM</p>
+                            </div>
+                        </div>
+                        <button class="btn-select" onclick="location.href='booking.html'">Select Doctor</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>UniHealth CMS - A 1st Year, 2nd Semester University Project</p>
+        <p>&copy; 2024 University Computer Science Dept. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
