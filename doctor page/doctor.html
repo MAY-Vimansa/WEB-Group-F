@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard - MediConnect</title>
+    <link rel="stylesheet" href="doctor.css">
+
+        
+    
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-navbar">
+        <div class="navbar-container">
+            <div class="logo-section">
+                <div class="logo-icon">⚕️</div>
+                <div class="logo-text">MediConnect</div>
+                <span class="doctor-badge">DOCTOR</span>
+            </div>
+            <div class="user-section">
+                <div class="user-profile">
+                    <div class="user-avatar">SP</div>
+                    <div class="user-info">
+                        <div class="user-name">Dr. Saman Perera</div>
+                        <div class="user-role">General Physician</div>
+                    </div>
+                </div>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Container -->
+    <div class="dashboard-container">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <div class="welcome-content">
+                <h1>Welcome, Dr. Saman Perera! 👨‍⚕️</h1>
+                <p>Here are your appointments for today</p>
+            </div>
+        </div>
+
+        <!-- Appointments Section -->
+        <div class="appointments-section">
+            <div class="section-header">
+                <h2>
+                    <span>📋</span>
+                    Patient Appointments
+                </h2>
+            </div>
+            <!-- Simplified Appointments Table -->
+            <div class="appointments-list" style="padding: 24px;">
+                <table style="width:100%; border-collapse:collapse;">
+                    <thead>
+                        <tr style="background:#f5f5f5;">
+                            <th style="padding:8px; border:1px solid #ddd;">Date</th>
+                            <th style="padding:8px; border:1px solid #ddd;">Patient Count</th>
+                            <th style="padding:8px; border:1px solid #ddd;">Time</th>
+                            <th style="padding:8px; border:1px solid #ddd;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding:8px; border:1px solid #ddd;">Feb 13, 2026</td>
+                            <td style="padding:8px; border:1px solid #ddd;">5</td>
+                            <td style="padding:8px; border:1px solid #ddd;">10:00 AM</td>
+                            <td style="padding:8px; border:1px solid #ddd;">
+                                <button class="action-btn accept-btn">✓ Accept</button>
+                                <button class="action-btn decline-btn">✗ Decline</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:8px; border:1px solid #ddd;">Feb 13, 2026</td>
+                            <td style="padding:8px; border:1px solid #ddd;">3</td>
+                            <td style="padding:8px; border:1px solid #ddd;">11:30 AM</td>
+                            <td style="padding:8px; border:1px solid #ddd;">
+                                <button class="action-btn accept-btn">✓ Accept</button>
+                                <button class="action-btn decline-btn">✗ Decline</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:8px; border:1px solid #ddd;">Feb 13, 2026</td>
+                            <td style="padding:8px; border:1px solid #ddd;">2</td>
+                            <td style="padding:8px; border:1px solid #ddd;">2:00 PM</td>
+                            <td style="padding:8px; border:1px solid #ddd;">
+                                <button class="action-btn accept-btn">✓ Accept</button>
+                                <button class="action-btn decline-btn">✗ Decline</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="doctor.js"></script>
+</html>
