@@ -55,9 +55,15 @@ document.addEventListener('DOMContentLoaded', () => {
         applyFilters();
     });
 
-    // Logout button
-    const logout = document.querySelector('.logout-btn');
-    if (logout) logout.addEventListener('click', () => {
-        alert('Logged out (demo)');
-    });
+    // Logout logic
+    const logoutBtn = document.querySelector('.logout-btn');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (confirm('Are you sure you want to logout?')) {
+                alert('Logged out successfully!');
+                window.location.href = '/Homepage/home.html';
+            }
+        });
+    }
 });
