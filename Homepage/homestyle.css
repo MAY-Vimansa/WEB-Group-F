@@ -483,6 +483,17 @@ color: #ccc;
     margin-bottom: 12px;
 }
 
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-list img {
+    display: block;
+    flex-shrink: 0;
+}
+
 .footer-section a {
     color: #ccc;
     text-decoration: none;
