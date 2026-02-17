@@ -91,10 +91,6 @@ body {
     color: #2196F3;
 }
 
-.nav-buttons {
-    display: flex;
-    gap: 15px;
-}
 
 .btn {
     padding: 12px 28px;
