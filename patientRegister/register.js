@@ -1,5 +1,5 @@
 function validateForm() {
-
+      
     if (document.form1.firstName.value.trim() === '') {
         alert("Please enter your first name");
         return false;
@@ -68,11 +68,26 @@ function validateForm() {
         return false;
     }
 
-    alert("YOU ARE REGISTERED SUCCESSFULLY!");
     return true;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    var messageEl = document.getElementById('formMessage');
+    var params = new URLSearchParams(window.location.search);
+    var error = params.get('error');
+    if (messageEl && error) {
+        var text = '';
+        if (error === 'exists') {
+            text = 'An account with this email already exists. Please sign in.';
+        } else if (error === 'invalid') {
+            text = 'Please fill all required fields correctly.';
+        }
+        if (text) {
+            messageEl.textContent = text;
+            messageEl.classList.add('error');
+        }
+    }
+
     var toggles = document.querySelectorAll('.toggle-password');
     toggles.forEach(function (btn) {
         btn.addEventListener('click', function () {
