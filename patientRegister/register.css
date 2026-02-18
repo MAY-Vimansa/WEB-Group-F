@@ -51,6 +51,22 @@ body {
     padding: 35px 30px;
 }
 
+.form-message {
+    display: none;
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: 1px solid transparent;
+}
+
+.form-message.error {
+    display: block;
+    background: #fdecea;
+    color: #b00020;
+    border-color: #f5c2c7;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
