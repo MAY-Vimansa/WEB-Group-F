@@ -59,3 +59,65 @@ if (doctor) {
 if (specialty) {
     document.getElementById('doctorSpecialty').textContent = specialty;
 }
+
+
+
+function showCurrentDateTime() {
+    var now = new Date();
+    var formatted = now.toLocaleString();
+
+    var info = document.createElement("p");
+    info.id = "currentDateTime";
+    info.style.marginTop = "15px";
+    info.style.fontSize = "14px";
+    info.style.color = "#555";
+    info.textContent = "Current Date & Time: " + formatted;
+
+    var container = document.querySelector(".booking-body");
+    if (container) {
+        container.appendChild(info);
+    }
+}
+
+showCurrentDateTime();
+
+
+var reasonField = document.getElementById("reason");
+
+if (reasonField) {
+
+    var counter = document.createElement("p");
+    counter.id = "charCounter";
+    counter.style.fontSize = "13px";
+    counter.style.color = "#777";
+    counter.textContent = "Characters: 0";
+
+    reasonField.parentNode.appendChild(counter);
+
+    reasonField.addEventListener("input", function () {
+        counter.textContent = "Characters: " + reasonField.value.length;
+    });
+}
+
+
+var form = document.forms["bookingForm"];
+
+if (form) {
+
+    var clearBtn = document.createElement("button");
+    clearBtn.type = "button";
+    clearBtn.textContent = "Clear Form";
+    clearBtn.style.marginLeft = "10px";
+    clearBtn.style.padding = "8px";
+
+    clearBtn.onclick = function () {
+        form.reset();
+        alert("Form cleared!");
+    };
+
+    form.appendChild(clearBtn);
+}
+
+
+
+}
