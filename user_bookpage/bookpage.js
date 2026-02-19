@@ -94,8 +94,17 @@ if (reasonField) {
 
     reasonField.parentNode.appendChild(counter);
 
-    reasonField.addEventListener("input", function () {
-        counter.textContent = "Characters: " + reasonField.value.length;
+   reasonField.addEventListener("input", function () {
+
+    var length = reasonField.value.length;
+    counter.textContent = "Characters: " + length;
+
+    if (length < 10) {
+        counter.style.color = "red";
+    } else {
+        counter.style.color = "green";
+    }
+
     });
 }
 
