@@ -118,6 +118,9 @@ if (form) {
     form.appendChild(clearBtn);
 }
 
+setInterval(showCurrentDateTime, 1000);
+
+
 
 
 }
