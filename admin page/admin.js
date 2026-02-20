@@ -35,18 +35,20 @@ window.onclick = function(event) {
 // Logout confirmation
 document.querySelector('.logout-btn').addEventListener('click', function(event) {
     event.preventDefault();
-    if(confirm('Are you sure you want to logout?')) {
-        alert('Logged out successfully!');
-        window.location.href = 'login.html';  
+    if (confirm('Are you sure you want to logout?')) {
+        window.location.href = 'http://localhost/project/logout.php';
     }
 });
 
 // Add Patient form validation
 function validateForm(event) {
     var form = event && event.target ? event.target : document.querySelector('#addPatientModal form');
-    var phoneInput = form ? form.querySelector('input[name="tel"]') : null;
-    var phoneValue = phoneInput ? phoneInput.value.trim() : '';
-    var isValid = /^\d{10}$/.test(phoneValue);
+    var phoneInput = form
+        ? form.querySelector('input[name="patient_tel"], input[name="phone"]')
+        : null;
+    var phoneValue = phoneInput ? phoneInput.value.replace(/\D/g, '') : '';
+    var isValid = phoneValue.length === 10;
+
 
     if (!isValid) {
         alert('Phone number must contain exactly 10 digits.');
@@ -64,9 +66,12 @@ function validateForm(event) {
 
 function validateDoctorForm(event) {
     var form = event && event.target ? event.target : document.querySelector('#addDoctorModal form');
-    var phoneInput = form ? form.querySelector('input[name="doctor_tel"]') : null;
-    var phoneValue = phoneInput ? phoneInput.value.trim() : '';
-    var isValid = /^\d{10}$/.test(phoneValue);
+    var phoneInput = form
+        ? form.querySelector('input[name="doctor_tel"], input[name="phone"]')
+        : null;
+    var phoneValue = phoneInput ? phoneInput.value.replace(/\D/g, '') : '';
+    var isValid = phoneValue.length === 10;
+
 
     if (!isValid) {
         alert('Phone number must contain exactly 10 digits.');
