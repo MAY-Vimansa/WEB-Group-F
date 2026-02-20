@@ -19,7 +19,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    max-width: 400px;
+    max-width: 480px;
     width: 100%;
 }
 
@@ -82,54 +82,31 @@ body {
     position: relative;
 }
 
+#password {
+    padding-right: 90px;
+}
+
 .show-password {
     position: absolute;
-    right: 16px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: #2196F3;
-    font-size: 13px;
-    cursor: pointer;
+    padding: 6px 12px;
+    border: 1px solid #c9d6e4;
+    border-radius: 8px;
+    background: #f5f8ff;
+    color: #1f2a44;
+    font-size: 12px;
     font-weight: 600;
-}
-
-.remember-forgot {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
-    font-size: 13px;
-}
-
-.remember-me {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.remember-me input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
     cursor: pointer;
-    accent-color: #2196F3;
+    transition: all 0.2s ease;
 }
 
-.remember-me label {
-    color: #666;
-    cursor: pointer;
+.show-password:hover {
+    background: #e8f1ff;
+    border-color: #2196F3;
 }
 
-.forgot-password {
-    color: #2196F3;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
 
 .login-button {
     width: 100%;
