@@ -129,8 +129,8 @@ $conn->close();
                         <div class="appointment-card">
                             <div class="appointment-info">
                                 <h4><?php echo e('Dr. ' . $appt['first_name'] . ' ' . $appt['last_name']); ?></h4>
-                                <p>?? <?php echo e($appt['appointment_date']); ?> at <?php echo e($appt['appointment_time']); ?></p>
-                                <p>?? <?php echo e($appt['reason']); ?></p>
+                                <p><?php echo e($appt['appointment_date']); ?> at <?php echo e($appt['appointment_time']); ?></p>
+                                <p><?php echo e($appt['reason']); ?></p>
                             </div>
                             <div class="appointment-status"><?php echo e(ucfirst($appt['status'])); ?></div>
                         </div>
