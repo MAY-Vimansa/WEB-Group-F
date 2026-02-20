@@ -61,8 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         logoutBtn.addEventListener('click', function(event) {
             event.preventDefault();
             if (confirm('Are you sure you want to logout?')) {
-                alert('Logged out successfully!');
-                window.location.href = '/Homepage/home.html';
+                window.location.href = 'http://localhost/project/logout.php';
             }
         });
     }
