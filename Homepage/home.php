@@ -53,7 +53,8 @@ $conn->close();
             </div>
             <div class="hero-image">
                 <div class="hero-illustration">
-                    <img src="http://localhost/project/Images for website/homepage/Mindd Foundation Articles.jpg.jpeg" width="570px"height="400px" class="homg-img"> 
+                    <img src="http://localhost/project/Images for website/homepage/Mindd Foundation Articles.jpg.jpeg" width="570px" height="400px" class="homg-img" alt="Mindd Foundation Article > 
+                
                 </div>
             </div>
         </div>
@@ -64,7 +65,7 @@ $conn->close();
         <div class="about-container">
             <div class="about-image">
                 <div class="about-img-placeholder">
-                    <img src="http://localhost/project/Images for website/homepage/aboutus.png" width="560px" height="400px" class="aboutus-img">
+                    <img src="http://localhost/project/Images for website/homepage/aboutus.png" width="560px" height="400px" class="aboutus-img" alt="images for website">
                 </div>
             </div>
             <div class="about-content">
@@ -107,7 +108,8 @@ $conn->close();
                     <?php foreach ($doctors as $doc): ?>
                         <div class="doctor-card">
                             <div class="doctor-icon">
-                                <img src="http://localhost/project/Images for website/homepage/doctor_9619282.png" class="doctor-img">
+                                <img src="http://localhost/project/Images for website/homepage/doctor_9619282.png" class="doctor-img" alt="Doctor illustration for Mindd Foundation website">
+                </div>
                             </div>
                             <h3><?php echo htmlspecialchars($doc['first_name'] . ' ' . $doc['last_name'], ENT_QUOTES, 'UTF-8'); ?></h3>
                             <p><?php echo htmlspecialchars($doc['specialization'] ?: 'Doctor', ENT_QUOTES, 'UTF-8'); ?></p>
@@ -159,9 +161,11 @@ $conn->close();
             <div class="footer-section">
                 <h3>Contact</h3>
                 <ul class="contact-list"><!--change these symboles to pngs-->
-                    <li><img src="http://localhost/project/Images for website/homepage/call vector Image Feb 13, 2026, 09_26_06 AM.png" width="25px" height="25px"> +94 11 234 5678</li>
-                    <li><img src="http://localhost/project/Images for website/homepage/email Image Feb 13, 2026, 09_27_34 AM.png" width="25px" height="25px"> info@mediconnect.lk</li>
-                    <li><img src="http://localhost/project/Images for website/homepage/location Image Feb 13, 2026, 09_28_44 AM.png" width="25px" height="25px"> Colombo, Sri Lanka</li>
+                   
+	                 <li><img src="http://localhost/project/Images for website/homepage/call vector Image Feb 13, 2026, 09_26_06 AM.png" width="25px" height="25px" alt="Call icon"> +94 11 234 5678</li>
+	                 <li><img src="http://localhost/project/Images for website/homepage/email Image Feb 13, 2026, 09_27_34 AM.png" width="25px" height="25px" alt="Email icon"> info@mediconnect.lk</li>
+	                 <li><img src="http://localhost/project/Images for website/homepage/location Image Feb 13, 2026, 09_28_44 AM.png" width="25px" height="25px" alt="Location icon"> Colombo, Sri Lanka</li>
+
                 </ul>
             </div>
         </div>
