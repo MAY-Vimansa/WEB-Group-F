@@ -49,7 +49,7 @@ $conn->close();
     <div class="profile-container">
         <div class="profile-header">
             <div class="profile-picture">
-                <img src="http://localhost/project/Images for website/homepage/vecteezy_3d-user-icon-on-transparent-background_16774583.png" width="120px" height="120px">
+               <img src="http://localhost/project/Images for website/homepage/vecteezy_3d-user-icon-on-transparent-background_16774583.png" width="120px" height="120px" alt="3D user icon on transparent background">
             </div>
             <h1><?php echo e($user['first_name'] . ' ' . $user['last_name']); ?></h1>
             <p>Patient ID: MC<?php echo (int)$user['id']; ?></p>
